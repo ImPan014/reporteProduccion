@@ -5,10 +5,10 @@ import java.lang.*;
 import java.io.*;
 
 // The main method must be in a class named "Main".
-class Main {
+class App {
 
 
-    public Main() {}
+    public App() {}
     
     
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ class Main {
         String input = args[0];
         System.out.println(input);
         //String json = generateJSON(input);
-        System.out.println(new Main().generateJSON(input));
+        System.out.println(new App().generateJSON(input));
     } else {
         System.out.println("Debe proporcionar un argumento.");
     }
