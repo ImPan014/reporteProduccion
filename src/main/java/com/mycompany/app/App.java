@@ -68,7 +68,7 @@ class Main {
         if (input.equals("Traspasos")) {
             return messageTraspasos;
         } else if (input.equals("Afiliaciones")) {
-            return messageAfiliaciones
+            return messageAfiliaciones;
         } else if (input.equals("Retiros")) {
             return messageRetiros;
         }else{
