@@ -22,7 +22,7 @@ class Main {
     }
 }
 
-    private static String generateJSON(String input) {
+    private final String generateJSON(String input) {
         // Suponiendo que la entrada es un valor simple para los fines de demostración
         if (input.equals("Traspasos")) {
             return "[\n" +
