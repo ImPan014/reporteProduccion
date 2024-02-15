@@ -15,8 +15,8 @@ class Main {
     if (args.length > 0) {
         String input = args[0];
         System.out.println(input);
-        String json = generateJSON(input);
-        System.out.println(json);
+        //String json = generateJSON(input);
+        System.out.println(new App().generateJSON(input));
     } else {
         System.out.println("Debe proporcionar un argumento.");
     }
