@@ -1,22 +1,20 @@
-package com.mycompany.app;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
-/**
- * Hello world!
- */
-public class App
-{
-
-    public App() {}
+// The main method must be in a class named "Main".
+class Main {
 
     public static void main(String[] args) {
-        if (args.length > 0) {
-            String input = args[0];
-            String json = generateJSON(input);
-            System.out.println(json);
-        } else {
-            System.out.println("Debe proporcionar un argumento.");
-        }
+    if (args.length > 0) {
+        String input = args[0];
+        System.out.println(input);
+        String json = generateJSON(input);
+        System.out.println(json);
+    } else {
+        System.out.println("Debe proporcionar un argumento.");
     }
+}
 
     private static String generateJSON(String input) {
         // Suponiendo que la entrada es un valor simple para los fines de demostración
@@ -61,7 +59,8 @@ public class App
                     "    {\"id\": 2, \"tienda\": \"Tienda B\", \"proceso\": 3100, \"usuarios\": 2},\n" +
                     "    {\"id\": 3, \"tienda\": \"Tienda C\", \"proceso\": 3100, \"usuarios\": 20},\n" +
                     "]";
+        }else{
+            return "Adios mundo";
         }
     }
-
 }
